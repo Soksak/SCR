@@ -1,0 +1,11 @@
+#!/bin/bash
+
+LC_ALL=C
+
+dzien=$(date +%u)
+# %u daje nam dzien tygodnia od 1-7 (1 to poniedzialek)
+if [ $dzien -gt 5 ]; then
+  echo "Weekend"
+else
+  echo "Dzien roboczy"
+fi

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+czytaj=$(pwd)/Zadanie2_Mail
+
+for mail in $(cat $czytaj/adresy.txt)
+do
+  cat $czytaj/tresc.txt | mutt -s "Temat" $mail -a $czytaj/spec1.pdf
+done
+# wykorzystanie mutt
+# -s oznacza temat wiadomosci, -a oznacza dodanie zalacznikow
