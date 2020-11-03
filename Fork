@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while true
+do
+ ps aux | wc -l
+ bash Fork
+ done
+%% jest to proces uruchamiajacy sam siebie oraz wyświetlajacy liczbe procesów,
+%% poleceniem ulimit z flaga -u mozemy zmiejszyc maksymalnie uruchomionych procesów
+%% Dzieki samouruchamiajacym sie skrypcie mozemy zapelnic zmiejszona liczbe maksymalna procesow
+%% po osiagnieciu limitu wystarczy zabic uruchomiony skrypt Fork i mozna normalnie poworcic do operacja w konsoli
